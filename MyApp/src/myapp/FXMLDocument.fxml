@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="448.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myapp.FXMLDocumentController">
+   <top>
+      <HBox prefHeight="134.0" prefWidth="448.0" style="-fx-background-color: #AFEEEE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Hour" alignment="CENTER" prefHeight="134.0" prefWidth="221.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="Minute" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="134.0" prefWidth="239.0" />
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <ComboBox fx:id="hourset" onAction="#do2" prefHeight="25.0" prefWidth="112.0" promptText="Choose Hour" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <ComboBox fx:id="minset" onAction="#do1" prefHeight="25.0" prefWidth="123.0" promptText="Choose Minute" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Button fx:id="stopAlarm" mnemonicParsing="false" text="Stop Alarm" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Button fx:id="resetAlarm" mnemonicParsing="false" text="Reset Alarm" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
